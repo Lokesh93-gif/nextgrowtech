@@ -1,26 +1,10 @@
-@media (max-width: 768px){
-
-    nav{
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .menu ul{
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .btn button {
-        width: 100%;
-    }
-    
-}
 
 nav{
     justify-content: space-between;
     display: flex;
     align-items: center;
     padding: 10px 40px;
+    gap: 20px;
 }
 
 .logo h1{
@@ -387,4 +371,72 @@ input::placeholder, textarea::placeholder {
 
 .section {
     scroll-margin-top: 80px;
+}
+
+@media (max-width: 480px){
+
+    nav{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .btn button {
+        width: 100%;
+    }
+    
+}
+
+/* Hero Section ( Heading aur Text ) */
+
+@media (max-width: 480px) {
+    /*Hero section ki heading choti karne ke liye */
+    .hero-section h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* Agar koi container hai toh uski padding kam karein */
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Stats Section */
+
+@media (max-width: 480px) {
+    .stats {
+        flex-direction: column; /* Line se hata kar column main karne ke liye */
+        text-align: centen;
+    }
+}
+
+/* Footer ( Quick Contact) */
+
+@media (max-width: 480px) {
+    .Qc {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .Qc h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 24px; /*Isse text screen ke andar fit ho jaayega */
+    }
+
+    .menu ul li {
+        font-size: 18px; /* Links ko thoda readable banayein */
+        list-style: none; /* Agar dots rahe hain toh hatane ke liye */
+    }
 }
